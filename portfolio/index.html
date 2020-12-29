@@ -26,6 +26,16 @@
 
    
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a').click(function(){
+                var selected = $(this);
+                $('a').removeClass('active')
+                $(selected).addClass('active')
+            })
+        })
+    </script>
+
 </body>
 
 </html>
